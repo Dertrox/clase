@@ -1,9 +1,9 @@
 /* --------- VARIABLES DE COLOR --------- */
 :root {
-  --azul-oscuro: #0f172a;
-  --azul-medio: #1d4ed8;
-  --azul-claro: #e0edff;
-  --azul-claro-2: #f3f6ff;
+  --azul-oscuro: #c81e1e;
+  --azul-medio: #364d8d;
+  --azul-claro: #1a5fc0;
+  --azul-claro-2: #9aa1bc;
   --texto-principal: #0b1120;
   --texto-suave: #6b7280;
   --blanco: #ffffff;
@@ -81,10 +81,14 @@ body {
 
 .site-main p {
   color: var(--texto-suave);
-  max-width: 60ch;
+  max-width: 70ch;
 }
 
-/* --------- GRID DE PROYECTOS --------- */
+.page-intro {
+  margin-top: 0.75rem;
+}
+
+/* --------- GRID DE PROYECTOS (INDEX) --------- */
 .proyectos {
   margin-top: 1.5rem;
   display: grid;
@@ -132,6 +136,25 @@ body {
   padding: 0.5rem;
 }
 
+/* --------- SECCIONES DE LAS PÁGINAS INTERNAS --------- */
+.section-block {
+  margin-top: 1.5rem;
+  background: var(--blanco);
+  border-radius: 14px;
+  padding: 1.2rem 1.4rem;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 10px 18px rgba(15, 23, 42, 0.08);
+}
+
+.section-block h3 {
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+}
+
+.section-block ul {
+  padding-left: 1.1rem;
+}
+
 /* --------- BOTONES --------- */
 .btn {
   display: inline-block;
@@ -165,4 +188,3 @@ body {
   text-align: center;
   font-size: 0.85rem;
 }
-

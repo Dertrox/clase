@@ -4,176 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Proyectos de la Academia José Restrepo</title>
-  <style>
-  /* --------- VARIABLES DE COLOR --------- */
-:root {
-  --azul-oscuro: #c81e1e;
-  --azul-medio: #364d8d;
-  --azul-claro: #1a5fc0;
-  --azul-claro-2: #9aa1bc;
-  --texto-principal: #0b1120;
-  --texto-suave: #6b7280;
-  --blanco: #ffffff;
-}
-
-/* --------- ESTILOS GENERALES --------- */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: var(--azul-claro-2);
-  color: var(--texto-principal);
-  line-height: 1.5;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 1.5rem;
-}
-
-/* --------- HEADER / NAV --------- */
-.site-header {
-  background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-medio));
-  color: var(--blanco);
-  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.4);
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.site-title {
-  margin: 0 0 0.5rem;
-  font-size: 1.8rem;
-}
-
-.site-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.nav-link {
-  text-decoration: none;
-  color: var(--azul-claro);
-  padding: 0.4rem 0.9rem;
-  border-radius: 999px;
-  font-size: 0.95rem;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
-}
-
-.nav-link:hover {
-  background: rgba(239, 246, 255, 0.12);
-  color: var(--blanco);
-  transform: translateY(-1px);
-}
-
-.nav-link[aria-current="page"] {
-  background: var(--blanco);
-  color: var(--azul-oscuro);
-  font-weight: 600;
-}
-
-/* --------- MAIN --------- */
-.site-main h2 {
-  margin-top: 2rem;
-  font-size: 1.6rem;
-}
-
-.site-main p {
-  color: var(--texto-suave);
-  max-width: 60ch;
-}
-
-/* --------- GRID DE PROYECTOS --------- */
-.proyectos {
-  margin-top: 1.5rem;
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-}
-
-/* CARD DE CADA PROYECTO */
-.proyecto {
-  background: var(--blanco);
-  border-radius: 14px;
-  padding: 1.1rem 1.1rem 1.2rem;
-  border: 1px solid rgba(148, 163, 184, 0.3);
-  box-shadow: 0 10px 18px rgba(15, 23, 42, 0.08);
-  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
-}
-
-.proyecto:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 30px rgba(15, 23, 42, 0.16);
-  border-color: rgba(37, 99, 235, 0.5);
-}
-
-.proyecto h3 {
-  margin: 0.2rem 0;
-  font-size: 1.2rem;
-}
-
-.proyecto p {
-  margin: 0;
-  color: var(--texto-suave);
-  font-size: 0.95rem;
-}
-
-/* IMÁGENES DE PROYECTO */
-.proyecto-img {
-  width: 100%;
-  max-height: 180px;
-  object-fit: contain;
-  border-radius: 10px;
-  background: var(--azul-claro);
-  padding: 0.5rem;
-}
-
-/* --------- BOTONES --------- */
-.btn {
-  display: inline-block;
-  margin-top: 0.7rem;
-  align-self: flex-start;
-  padding: 0.5rem 1.2rem;
-  text-decoration: none;
-  border-radius: 999px;
-  background: var(--azul-medio);
-  color: var(--blanco);
-  font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  border: none;
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.15s ease;
-}
-
-.btn:hover {
-  background: #1e40af;
-  transform: translateY(-1px);
-  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.35);
-}
-
-/* --------- FOOTER --------- */
-.site-footer {
-  margin-top: 3rem;
-  padding: 1.5rem 0;
-  background: var(--azul-oscuro);
-  color: var(--azul-claro);
-  text-align: center;
-  font-size: 0.85rem;
-}
-</style>
-
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="site-header" role="banner">
@@ -182,20 +13,71 @@ body {
       <nav class="site-nav" aria-label="Principal">
         <ul>
           <li><a href="index.html" class="nav-link" aria-current="page">Inicio</a></li>
+          <li><a href="unity.html" class="nav-link">Unity</a></li>
+          <li><a href="kicad.html" class="nav-link">KiCad</a></li>
+          <li><a href="python.html" class="nav-link">Python</a></li>
+          <li><a href="appinventor.html" class="nav-link">App Inventor</a></li>
           <li><a href="proteus.html" class="nav-link">Proteus</a></li>
+          <li><a href="wokwi.html" class="nav-link">Wokwi</a></li>
           <li><a href="cubos-espacio.html" class="nav-link">Cubos en el espacio</a></li>
           <li><a href="roblox.html" class="nav-link">Roblox</a></li>
-          <li><a href="campamento.html" class="nav-link" aria-current="page">Campamento lunar</a></li>
+          <li><a href="campamento.html" class="nav-link">Campamento lunar</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="site-main container" id="contenido" role="main">
+  <main class="site-main container" role="main">
     <h2>Proyectos realizados</h2>
-    <p>Estos son algunos de los proyectos que se han desarrollado en la academia por los estudiantes durante el último año.</p>
+    <p>
+      Estos son algunos de los proyectos que se han desarrollado en la academia por los estudiantes durante el último año.
+    </p>
 
     <section class="proyectos">
+
+      <article class="proyecto">
+        <img
+          src="imagenes/unity.png"
+          alt="Proyecto creado en Unity"
+          class="proyecto-img"
+        />
+        <h3>Unity</h3>
+        <p>Creación de experiencias interactivas y videojuegos en el motor Unity.</p>
+        <a class="btn" href="unity.html">Ver detalles</a>
+      </article>
+
+      <article class="proyecto">
+        <img
+          src="imagenes/kicad.png"
+          alt="Diseño de PCB en KiCad"
+          class="proyecto-img"
+        />
+        <h3>KiCad</h3>
+        <p>Diseño de tarjetas electrónicas (PCB) utilizando el software libre KiCad.</p>
+        <a class="btn" href="kicad.html">Ver detalles</a>
+      </article>
+
+      <article class="proyecto">
+        <img
+          src="imagenes/python.png"
+          alt="Logo de Python"
+          class="proyecto-img"
+        />
+        <h3>Python</h3>
+        <p>Programas y pequeños proyectos usando Python como primer lenguaje de programación.</p>
+        <a class="btn" href="python.html">Ver detalles</a>
+      </article>
+
+      <article class="proyecto">
+        <img
+          src="imagenes/appinventor.png"
+          alt="Captura de App Inventor"
+          class="proyecto-img"
+        />
+        <h3>App Inventor</h3>
+        <p>Aplicaciones móviles sencillas diseñadas mediante bloques en App Inventor.</p>
+        <a class="btn" href="appinventor.html">Ver detalles</a>
+      </article>
 
       <article class="proyecto">
         <img
@@ -210,12 +92,23 @@ body {
 
       <article class="proyecto">
         <img
+          src="imagenes/wokwi.png"
+          alt="Simulación en Wokwi"
+          class="proyecto-img"
+        />
+        <h3>Wokwi</h3>
+        <p>Simulaciones de proyectos con Arduino y ESP32 directamente en el navegador.</p>
+        <a class="btn" href="wokwi.html">Ver detalles</a>
+      </article>
+
+      <article class="proyecto">
+        <img
           src="imagenes/cubes.png"
           alt="Escena 3D con cubos en el espacio"
           class="proyecto-img"
         />
         <h3>Cubos en el espacio</h3>
-        <p>Escena 3D con cubos flotando en el espacio, ideal para aprender conceptos de gráficos y animación.</p>
+        <p>Escena 3D con cubos flotando, ideal para aprender gráficos y animación.</p>
         <a class="btn" href="cubos-espacio.html">Ver detalles</a>
       </article>
 
@@ -226,18 +119,18 @@ body {
           class="proyecto-img"
         />
         <h3>Juego en Roblox</h3>
-        <p>Experiencia interactiva creada en Roblox Studio, con mecánicas básicas de juego.</p>
+        <p>Experiencia interactiva creada en Roblox Studio con mecánicas básicas de juego.</p>
         <a class="btn" href="roblox.html">Ver detalles</a>
       </article>
 
       <article class="proyecto">
         <img
           src="imagenes/mooncamp.png"
-          alt="Logo mooncamp challenge"
+          alt="Logo MoonCamp Challenge"
           class="proyecto-img"
         />
         <h3>Campamento lunar</h3>
-        <p>Experiencia interactiva creada en Roblox Studio, con mecánicas básicas de juego.</p>
+        <p>Diseño de una base en la Luna, integrando conceptos de ciencia, tecnología y creatividad.</p>
         <a class="btn" href="campamento.html">Ver detalles</a>
       </article>
 
